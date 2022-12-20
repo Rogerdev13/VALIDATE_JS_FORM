@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO SKRRSITO</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet"  href="formulario.css">
+    <link rel="icon" href="formulario.png"> 
+    
+</head>
+<body>
+    
+    <form action="" class="formulario" id="formulario">
+
+        <div class="formulario__grupo " id="grupo__usuario">  <!--PRIMER IMPUT CON SU RESPECTIVO LABEL-->
+            <label for="usuario" class="formulario__label">USUARIO</label>  
+            <div class="formulario__grupo-input">
+                <input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="Ingresa tu usuario anunaki">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">Tiene que ser un usuario valido registrado en nuestro servidor</p>
+        </div>
+
+        <div class="formulario__grupo " id="grupo__nombre">  <!--SEGUNDO IMPUT CON SU RESPECTIVO LABEL-->
+            <label for="nombre" class="formulario__label">NOMBRE</label>  
+            <div class="formulario__grupo-input">
+                <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Ingresa tu nombre anunakianito ">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">No puede contener caracteres especiales bro </p>
+        </div>
+
+        <div class="formulario__grupo" id="grupo__password">
+            <label for="password" class="formulario__label">CONTRASEÑA</label>  
+            <div class="formulario__grupo-input">
+                <input type="password" class="formulario__input" name="password" id="password" >
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">La contrseña tiene que ser de 4 a 8 digitos como minimo</p>
+        </div>
+
+        <div class="formulario__grupo" id="grupo__password2">
+            <label for="password2" class="formulario__label">REPETIR CONTRASEÑA</label>  
+            <div class="formulario__grupo-input">
+                <input type="password" class="formulario__input" name="password2" id="password2" >
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">Las contraseñas no coinciden bro </p>
+        </div>
+
+        <div class="formulario__grupo" id="grupo__correo">  <!--SEGUNDO IMPUT CON SU RESPECTIVO LABEL-->
+            <label for="correo" class="formulario__label">CORREO</label>  
+            <div class="formulario__grupo-input">
+                <input type="email" class="formulario__input" name="correo" id="correo" placeholder="Ingresa tu correo  ">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">Por favor ingresa un correo valido </p>
+        </div>
+        
+        <div class="formulario__grupo" id="grupo__telefono">  <!--SEGUNDO IMPUT CON SU RESPECTIVO LABEL-->
+            <label for="telefono" class="formulario__label">TELEFONO</label>  
+            <div class="formulario__grupo-input">
+                <input type="number" class="formulario__input" name="telefono" id="telefono" placeholder="Ingresa tu telefono ">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">Por favor ingresa un telefono valido </p>
+        </div>
+
+        <!-- GRUPO PARA TERMINOS Y CONDICIONES MIJIN -->
+
+        <div class="formulario__grupo-terminos" id="grupo__terminos">
+            <label class="formulario__label">
+                <input  class="formulario__checkbox" type="checkbox" name="terminos"  id="terminos"> 
+                <b>ACEPTO TODOS LOS TERMINOS Y CONDICIONES </b>
+            </label>
+        </div>
+
+        <div class="formulario__mensaje" id="formulario__mensaje">
+            <p><i class="fas fa-skull-crossbones"></i><b>ERROR:</b> Por favor rellena correctamente el formulario</p>
+        </div>
+
+        <div class="formulario__grupo  formulario__grupo-btn-enviar" >
+            <button class="formulario__btn"  type="submit">ENVIAR</button>
+            <p  class="formulario__mensaje-exito" id="formulario__mensaje-exito">EL formulario se envio de lujian mi hermano </p>
+        </div>
+
+    </form>
+
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="formulario.js"></script>
+</body>
+</html>
+
